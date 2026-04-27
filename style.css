@@ -1,0 +1,267 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fefefe;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #222;
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.4s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  padding: 8px 10px;
+  margin-right: 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.cart {
+  font-size: 20px;
+}
+
+.catagory{
+  padding-left: 23%;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  overflow: hidden;
+
+  
+}
+
+
+
+
+.catagory a{
+  margin: 0 15px;
+  text-decoration: none;
+  color: #222;
+  position: relative;
+
+}
+
+.catagory a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.4s ease;
+}
+
+.catagory a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  
+  
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #000;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* For Firefox */
+}
+
+.product-grid::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari */
+}
+
+.product-card {
+  min-width: 250px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background: #fff;
+  
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.add-to-cart {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Masonry Styles */
+.tall img {
+  height: 300px;
+}
+
+.wide img {
+  height: 250px;
+}
+
+
+
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 60px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.socials a img {
+  margin: 10px 10px 0 0;
+  filter: brightness(0) invert(1);
+  transition: 0.3s ease;
+}
+
+.socials a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}

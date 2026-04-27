@@ -1,0 +1,33 @@
+body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .product-container, table {
+        width: 80%;
+        margin: auto;
+    }
+
+    .product {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px;
+        display: inline-block;
+    }
+
+    button, a {
+        background-color: #28a745;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover, a:hover {
+        background-color: #218838;
+    }
